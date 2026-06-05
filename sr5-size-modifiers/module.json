@@ -1,0 +1,28 @@
+{
+  "name": "sr5-size-modifiers",
+  "id": "sr5-size-modifiers",
+  "title": "SR5 Size Modifiers (RG2) — только для металюдей",
+  "description": "Добавляет модификаторы размера цели к броскам атаки на основе суммы Тела и Силы.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Your Name"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "maximum": "14",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/size-modifiers.js"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "shadowrun5e",
+        "type": "system"
+      }
+    ]
+  }
+}

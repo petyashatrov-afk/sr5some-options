@@ -1,0 +1,37 @@
+{
+   "name": "sr5-bleed-mechanic",
+   "id": "sr5-bleed-mechanic",
+  "title": "SR5 Bleed (Bullets & Bandages)",
+  "description": "Добавляет эффект кровотечения при получении >5 физического урона за раз.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Your Name"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "maximum": "14",
+    "verified": "13"
+  },
+  "scripts": [],
+  "esmodules": [
+    "scripts/bleed.js"
+  ],
+  "styles": [],
+  "packs": [],
+  "languages": [],
+  "relationships": {
+    "systems": [
+      {
+        "id": "shadowrun5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "socket": false,
+  "url": "",
+  "manifest": "",
+  "download": ""
+}
