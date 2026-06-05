@@ -4,24 +4,14 @@ An all-in-one combined and optimized options module for Shadowrun 5th Edition (S
 This module unifies 5 essential house rules and game mechanics into a single module with convenient world settings toggles:
 
 Bleeding (Bleed) (from Bullets & Bandages) — Automatically applies and upgrades bleeding physical damage ticks when taking more than 5 physical damage from a single attack.
+
 Elemental Damage — Adds automatic status effects and 1-click resistance tests for Acid, Cold, Electricity, and Fire.
 Size Modifiers (RG2) — Applies dice pool modifiers to attack tests based on the target metahuman's size (calculated from the sum of Body + Strength).
-Speed Penalties (RG3) — Applies progressive penalties to attacks and defenses depending on the distance traveled by a token during its combat turn.
-Defenselessness Bonus / Unopposed Damage (RG6) — If a defender's defense pool falls below 0 due to modifiers, every 2 negative dice grant a +1 убойность (damage value) bonus.
-Key Improvements & Bug Fixes
-1. Foundry VTT v14 Compatibility
-All scripts have been fully refactored to modular ES standards and updated to support v14 ActiveEffect schemas, document collections, and hooks. Legacy fields (like label and icon in ActiveEffects) have been removed to completely prevent strict validation database crashes.
 
-2. Defenselessness & Unopposed Damage Fixed (RG6)
-The Problem: The old module attempted to read non-existent system properties (pool.mod and modifiers.value), which completely broke calculations. Moreover, if the target skipped defense completely (e.g. surprised or defenseless), the defense test was bypassed, resulting in zero bonus applied.
-The Solution:
-Overrides PhysicalDefenseTest base calculations to intercept raw negative defense pool values before they are capped at 0.
-Automatically adds a "Resist Without Defense" button to attack cards. Clicking it runs an in-memory defense test of the defender with all situational penalties (wounds, FA fire modes, cover, speed), calculates the exact negative pool, adds the defenselessness bonus + attacker hits natively to the damage, and opens a fully prepared Body + Armor PhysicalResistTest dialog!
-3. Native Elemental Resistance Buttons & Progressive Armor Corrosions
-Progressive Armor Penalty (ADD Mode): Acid armor reduction now works progressively. Instead of creating multiple disjointed override effects, it uses a single active effect utilizing ADD -1, which seamlessly updates and scales up (e.g., -1 → -2 → -3) upon subsequent exposures.
-1-Click Resist Button: Periodic element reminder cards in chat now feature beautiful, standard-styled "Roll Resist" buttons. Clicking them instantiates a native PhysicalResistTest which automatically Queries the actor's custom elemental resistances (fire resistance, acid armor protection, element immunities) and AP reductions, preparing a perfect native dice pool of Body + Armor!
-4. Professional Localization (EN & RU)
-Fully translated utilizing Foundry's native translation JSON packs (lang/en.json, lang/ru.json). All settings, buttons, tooltips, and chat cards adapt automatically to the user's selected language.
+Speed Penalties (RG3) — Applies progressive penalties to attacks and defenses depending on the distance traveled by a token during its combat turn.
+Defenselessness Bonus / Unopposed Damage (RG6) — If a defender's defense pool falls below 0 due to modifiers, every 2 negative dice grant a +1 DV (damage value) bonus.
+
+
 
 SR5 Combined Options & Mechanics (Совместим с v14)
 Объединенный и улучшенный модуль механик для системы Shadowrun 5e (SR5-FoundryVTT) в Foundry VTT v14.
