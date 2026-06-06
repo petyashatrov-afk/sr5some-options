@@ -1,0 +1,50 @@
+{
+  "name": "sr5-some-options",
+  "id": "sr5-some-options",
+  "title": "SR5 Combined Options & Mechanics",
+  "description": "Объединённый модуль для Shadowrun 5e: Кровотечение (Bleed), Элементальный урон (Elemental Damage), Модификаторы размера (Size Modifiers), Штрафы за скорость (Speed Penalties) и Бонус за беззащитность (Unopposed Damage). С настройками включения каждой опции.",
+  "version": "1.7.3",
+  "authors": [
+    {
+      "name": "Petya Shatrov & Arena Agent"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "maximum": "14",
+    "verified": "14"
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/style.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "shadowrun5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.35.0"
+        }
+      }
+    ]
+  },
+  "socket": false,
+  "url": "https://github.com/petyashatrov-afk/sr5some-options",
+  "manifest": "",
+  "download": ""
+}
